@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tjp1992/code/tjp1992/TaxiFareModel/mlruns/1/febaf1c8b35f43da9c4cb60a20f5e07a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: febaf1c8b35f43da9c4cb60a20f5e07a
+run_uuid: febaf1c8b35f43da9c4cb60a20f5e07a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1645514156386
+status: 1
+tags: []
+user_id: unknown

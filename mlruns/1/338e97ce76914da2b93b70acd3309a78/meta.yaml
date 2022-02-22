@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tjp1992/code/tjp1992/TaxiFareModel/mlruns/1/338e97ce76914da2b93b70acd3309a78/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 338e97ce76914da2b93b70acd3309a78
+run_uuid: 338e97ce76914da2b93b70acd3309a78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1645514156384
+status: 1
+tags: []
+user_id: unknown

@@ -1,0 +1,4 @@
+artifact_location: file:///home/tjp1992/code/tjp1992/TaxiFareModel/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: test_experiment

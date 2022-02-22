@@ -1,7 +1,7 @@
 # imports
-from data import get_data, clean_data
-from utils import compute_rmse
-import encoders
+from TaxiFareModel.data import get_data, clean_data
+from TaxiFareModel.utils import compute_rmse
+from TaxiFareModel.encoders import DistanceTransformer, TimeFeaturesEncoder
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -22,12 +22,12 @@ class Trainer():
     def set_pipeline(self):
         """defines the pipeline as a class attribute"""
         dist_pipe = Pipeline([
-            ('dist_trans', encoders.DistanceTransformer()),
+            ('dist_trans', DistanceTransformer()),
             ('stdscaler', StandardScaler())
         ])
 
         time_pipe = Pipeline([
-            ('time_enc', encoders.TimeFeaturesEncoder('pickup_datetime')),
+            ('time_enc', TimeFeaturesEncoder('pickup_datetime')),
             ('ohe', OneHotEncoder(handle_unknown='ignore'))
         ])
 
@@ -44,6 +44,7 @@ class Trainer():
 
     def run(self):
         """set and train the pipeline"""
+        self.set_pipeline()
         self.pipeline.fit(self.X, self.y)
 
 
